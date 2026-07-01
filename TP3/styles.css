@@ -1,0 +1,120 @@
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background: #0f172a;
+    color: white;
+}
+
+.portail {
+    min-height: 100vh;
+    display: grid;
+    grid-template-columns: 1.2fr 1fr;
+}
+
+.illustration {
+    padding: 60px;
+    background: linear-gradient(135deg, #1e3a8a, #020617);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.illustration h1 {
+    font-size: clamp(2rem, 5vw, 4rem);
+    margin-bottom: 20px;
+}
+
+.illustration p,
+.illustration li {
+    font-size: clamp(1rem, 2vw, 1.3rem);
+    line-height: 1.6;
+}
+
+.connexion {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+    background: #f8fafc;
+    color: #0f172a;
+}
+
+form {
+    width: 100%;
+    max-width: 420px;
+    padding: 30px;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.15);
+}
+
+form h2 {
+    font-size: clamp(1.8rem, 4vw, 2.5rem);
+    margin-bottom: 25px;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="password"] {
+    width: 100%;
+    min-height: 44px;
+    padding: 0 12px;
+    margin-bottom: 18px;
+    font-size: 1rem;
+    box-sizing: border-box;
+}
+
+.charte {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+input[type="submit"] {
+    width: 100%;
+    min-height: 44px;
+    background: #2563eb;
+    color: white;
+    border: none;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background: #1d4ed8;
+}
+
+/* Version smartphone */
+@media (max-width: 768px) {
+
+    .portail {
+        display: block;
+    }
+
+    .illustration {
+        display: none;
+    }
+
+    .connexion {
+        min-height: 100vh;
+        padding: 20px;
+    }
+
+    form {
+        padding: 24px;
+    }
+
+    input[type="text"],
+    input[type="password"],
+    input[type="submit"] {
+        min-height: 44px;
+        font-size: 16px;
+    }
+}

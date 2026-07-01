@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>SOC Security Events</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+<header>
+    <h1>SOC Security Events</h1>
+
+    <div class="stats">
+        <span>EPS : 352/s</span>
+        <span>Base de données : ONLINE</span>
+    </div>
+</header>
+
+<main>
+
+    <aside>
+
+        <h2>Filtres</h2>
+
+        <form>
+
+            <label>Adresse IP Source</label>
+            <input type="text" placeholder="Ex : 192.168.1.15">
+
+            <label>Criticité</label>
+
+            <select>
+                <option>Critique</option>
+                <option>Warning</option>
+                <option>Info</option>
+            </select>
+
+            <input type="submit" value="Appliquer les filtres">
+
+        </form>
+
+    </aside>
+
+    <section>
+
+        <h2>Evènements SIEM</h2>
+
+        <table>
+
+            <thead>
+                <tr>
+                    <th>Horodatage</th>
+                    <th>ID Evènement</th>
+                    <th>IP Source</th>
+                    <th>Type d'Attaque</th>
+                    <th>Action Pare-feu</th>
+                </tr>
+            </thead>
+
+            <tbody>
+
+                <tr>
+                    <td>06:12:04</td>
+                    <td>EVT-942</td>
+                    <td>185.220.101.5</td>
+                    <td>Brute Force SSH</td>
+                    <td>Bloqué</td>
+                </tr>
+
+                <tr>
+                    <td>07:35:22</td>
+                    <td>EVT-1043</td>
+                    <td>91.198.174.192</td>
+                    <td>Scan de Ports</td>
+                    <td>Bloqué</td>
+                </tr>
+
+                <tr>
+                    <td>09:51:16</td>
+                    <td>EVT-1187</td>
+                    <td>203.0.113.44</td>
+                    <td>Injection SQL</td>
+                    <td>Refusé</td>
+                </tr>
+
+            </tbody>
+
+        </table>
+
+    </section>
+
+</main>
+
+<footer>
+
+    Statut SecOps : Conforme ✔
+
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,145 @@
+/* Général */
+
+body{
+
+    margin:0;
+    font-family:Arial, Helvetica, sans-serif;
+    background:linear-gradient(180deg,#0f172a,#020617);
+    color:white;
+
+}
+
+/* Header */
+
+header{
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    padding:20px;
+    margin:20px;
+
+    background:#111827;
+
+    box-shadow:0 0 15px rgba(255,0,0,0.35);
+
+}
+
+.stats{
+
+    display:flex;
+    gap:20px;
+
+}
+
+/* Main */
+
+main{
+
+    display:grid;
+    grid-template-columns:300px 1fr;
+    gap:20px;
+
+    margin:20px;
+
+}
+
+/* Aside */
+
+aside{
+
+    padding:20px;
+
+    background:#111827;
+
+    box-shadow:0 0 15px rgba(0,120,255,0.35);
+
+}
+
+aside form{
+
+    display:flex;
+    flex-direction:column;
+    gap:15px;
+
+}
+
+input[type=text],
+select{
+
+    padding:10px;
+    border:none;
+
+}
+
+input[type=submit]{
+
+    padding:12px;
+    background:#2563eb;
+    color:white;
+    border:none;
+    cursor:pointer;
+
+}
+
+input[type=submit]:hover{
+
+    background:#1d4ed8;
+
+}
+
+/* Section */
+
+section{
+
+    padding:20px;
+
+    background:#111827;
+
+    box-shadow:0 0 15px rgba(255,0,0,0.35);
+
+}
+
+/* Tableau */
+
+table{
+
+    width:100%;
+    border-collapse:collapse;
+
+}
+
+th{
+
+    background:#1e3a8a;
+    padding:12px;
+
+}
+
+td{
+
+    padding:10px;
+    border-bottom:1px solid #374151;
+
+}
+
+tr:hover{
+
+    background:#1f2937;
+
+}
+
+/* Footer */
+
+footer{
+
+    text-align:center;
+    padding:20px;
+    margin:20px;
+
+    background:#111827;
+
+    box-shadow:0 0 15px rgba(0,120,255,0.35);
+
+}
